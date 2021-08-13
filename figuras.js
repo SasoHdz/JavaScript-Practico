@@ -10,7 +10,7 @@ function areaCuadrado (lado){
 // Area Triangulo
 function perimetroTriangulo(lado1, lado2, base)
 {
-    return lado1+lado2+base;
+    return (lado1*1+lado2*1+base*1);
 }
 
 function areaTriangulo(base, altura) {
@@ -44,9 +44,7 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-
-    alert(perimetro);
-
+    document.getElementById('resultadoCuadrado').innerHTML = perimetro + "cm";
 }
 
 function calcularAreaCuadrado(){
@@ -54,7 +52,44 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
+    document.getElementById('resultadoCuadrado').innerHTML = area + "cm^2";
+}
 
-    alert(area);
-    
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("lado1Triangulo");
+    const lado1 = input1.value;
+    const input2 = document.getElementById("lado2Triangulo");
+    const lado2 = input2.value;
+    const input3 = document.getElementById("baseTriangulo");
+    const base = input3.value;
+
+    const perimetro = perimetroTriangulo(lado1, lado2, base);
+    document.getElementById('resultadoTriangulo').innerHTML = perimetro + "cm";
+}
+
+function calcularAreaTriangulo(){
+    const input = document.getElementById("baseTriangulo");
+    const base = input.value;
+    const input2 = document.getElementById("alturaTriangulo");
+    const altura = input2.value;
+
+    const area = areaTriangulo(base, altura);
+    document.getElementById('resultadoTriangulo').innerHTML = area + "cm^2";
+}
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const radio = input.value;
+
+    const perimetro = perimetroCirculo(radio);
+    document.getElementById('resultadoCirculo').innerHTML = perimetro + "cm";
+
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputCirculo");
+    const radio = input.value;
+
+    const area = areaCirculo(radio);
+    document.getElementById('resultadoCirculo').innerHTML = area + "cm^2";
 }

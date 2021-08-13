@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(0, 132, 255);
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.9rem;
+    margin-top: 12px;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 500px;
+    min-width: 300px;
+    font-size: 1.5rem;
+    height: auto;
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+img {
+    width: 50px;
+}
+
+form {
+    margin: 5px 0px 10px;
+}
+
+label {
+    margin: 10px 0px 10px;
+}
+
+input {
+    margin: 10px 0px 10px;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+
+button {
+    width: 150px;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border-radius: 8px;
+    background: rgb(89, 90, 89);
+    color: white;
+}
+
+.button-container {
+    margin: 10px 0px 10px;
+}
+
+.cont1 {
+    background: rgb(221,84,42);
+    background: linear-gradient(90deg, rgba(221,84,42,1) 0%, rgba(15, 188, 200, 0.877) 87%);
+}
+
+.cont2 {
+    background: rgb(123,60,157);
+    background: linear-gradient(90deg, rgba(123,60,157,1) 0%, rgba(15,200,83,0.87718837535014) 100%);
+}
+
+.cont3 {
+    background: rgb(63,60,157);
+    background: linear-gradient(90deg, rgba(63,60,157,1) 9%, rgba(200,15,84,0.87718837535014) 99%);
+}
+

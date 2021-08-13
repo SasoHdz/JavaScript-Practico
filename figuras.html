@@ -5,20 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="./css/figuras.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 500px)">
+    <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 1040px)">
 </head>
 <body>
     <header>
         <h1>Figuras Geométricas</h1>
-        <p>Este es el primer tallet del curso práctico de JavaScript</p>
+        <p>Este es el primer taller del curso práctico de JavaScript</p>
     </header>
     <section>
-        <h2>Calcular el área y perímetro de un cuadrado</h2>
-        <form action="">
-            <label for="InputCuadrado">Escribe cuánto mide el lado de tu cuadrado:</label>
-            <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-        </form>
+        <div class="container cont1">
+            <div class="headContainer">
+                <h2>Calcular el área y perímetro de cuadrado :</h2>
+                <img src="https://img.icons8.com/color/48/000000/rounded-square.png"/>
+            </div>
+            <form action="">
+                <label for="InputCuadrado">Escribe cuánto mide el lado de tu cuadrado:</label>
+                <input id="InputCuadrado" type="number">
+                <div class="button-container">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Área</button>
+                </div>
+            </form>
+            <h3 id="resultadoCuadrado"></h3>
+        </div>
+        <div class="container cont2">
+            <div class="headContainer">
+                <h2>Calcular el área y perímetro de triangulo :</h2>
+                <img src="https://img.icons8.com/emoji/48/000000/red-triangle-pointed-up-emoji.png"/>
+            </div>
+            <form action="">
+                <label for="">Escribe el las medidas de tu triangulo:</label>
+                <div class="containerInput">
+                    <label for="lado1Triangulo">Lado 1</label>
+                    <input id="lado1Triangulo" type="number">
+                </div>
+                <div class="containerInput">
+                    <label for="lado2Triangulo">Lado 2</label>
+                    <input id="lado2Triangulo" type="number">
+                </div>
+                <div class="containerInput">
+                    <label for="baseTriangulo">Base</label>
+                    <input id="baseTriangulo" type="number">
+                </div>
+                <div class="containerInput">
+                    <label for="alturaTriangulo">Altura</label>
+                    <input id="alturaTriangulo" type="number">
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Área</button>
+                </div>
+            </form>
+            <h3 id="resultadoTriangulo"></h3>
+        </div>
+        <div class="container cont3">
+            <div class="headContainer">
+                <h2>Área y perímetro de Circulo :</h2>
+                <img src="https://img.icons8.com/emoji/48/000000/yellow-circle-emoji.png"/>
+            </div>
+            <form action="">
+                <label for="InputCirculo">Escribe cuánto mide el radio del Circulo:</label>
+                <input id="InputCirculo" type="number">
+                 <div class="button-container">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Área</button>
+                 </div>
+            </form>
+            <h3 id="resultadoCirculo"></h3>
+        </div>
     </section>
 
 

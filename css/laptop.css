@@ -1,0 +1,26 @@
+section {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont1 {
+    position: absolute;
+    left: 8vh;
+}
+
+.cont2 {
+    position: absolute;
+    left: 80vh;
+    top: 10vh;
+}
+
+.cont3 {
+    position: absolute;
+    left: 130vh;
+    top: 0vh;
+}
