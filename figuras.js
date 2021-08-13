@@ -13,9 +13,26 @@ function perimetroTriangulo(lado1, lado2, base)
     return (lado1*1+lado2*1+base*1);
 }
 
+function alturaTrianguloIsoceles(lado1, lado2, base){
+
+    if(lado1 === lado2)
+    {
+        const cateto1 = base / 2;
+        const hipotenusa = lado1;
+    
+        const altura = Math.sqrt(Math.pow(2,hipotenusa) - Math.pow(2,cateto1));
+
+        return altura;
+    }
+    else return "No es un triángulo isósceles";
+   
+   
+}
+
 function areaTriangulo(base, altura) {
     return (base * altura)/2;
 }
+
 
 // Area Circulo
 //Diametro
