@@ -3,13 +3,12 @@ const descuento = 15;
  */
 
 const cupones = [
-    {codigo = 'cupon1', descuento = 12 },
-    {codigo = 'XCDed3', descuento = 32 },
-    {codigo = 'Platzi20', descuento = 20 },
-    {codigo = 'SasoHdz12', descuento = 15 },
-    {codigo = 'cupon343', descuento = 18 },
+    {codigo: 'cupon1', descuento : 12 },
+    {codigo: 'XCDed3', descuento : 32 },
+    {codigo: 'Platzi20', descuento : 20 },
+    {codigo: 'SasoHdz12', descuento : 15 },
+    {codigo: 'cupon343', descuento : 18 },
 ];
-
 
 function calcularPrecionConDescuento(precio, descuento)
 {
@@ -23,13 +22,18 @@ function buttonPriceDescount() {
     const inputPrice = document.getElementById('inputPrice');
     const priceValue = inputPrice.value;
 
-    const inputDiscount = document.getElementById('inputCupon');
-    const discountValue = inputDiscount.value;
+    const inputCupon = document.getElementById('inputCupon');
+    const discountValue = inputCupon.value;
+    const cupon = cupones.find(cupon => cupon.codigo == discountValue);
+    console.log(cupon)
 
-
-    const precioDescuento = calcularPrecionConDescuento(priceValue, discountValue);
-
-    document.getElementById('result').innerText = "El precio con descuento es $" + precioDescuento;
+    if(cupon != null)
+    {
+        const precioDescuento = calcularPrecionConDescuento(priceValue, cupon.descuento);
+        document.getElementById('result').innerText = "El precio con descuento es $" + precioDescuento;
+    }else {
+        document.getElementById('result').innerText = "El cupon no existe :(";
+    }
 
 }
 

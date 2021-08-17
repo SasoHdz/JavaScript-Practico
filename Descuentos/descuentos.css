@@ -103,3 +103,13 @@ p {
     font-weight: 800;
     margin-top: 20px;
 }
+
+ul {
+    padding: 50px 0px 20px;
+    color:rgb(45, 105, 233);
+}
+
+ul li {
+    font-size: 1.4rem;
+}
+
