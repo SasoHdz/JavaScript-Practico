@@ -13,7 +13,7 @@ function esPar(num) {
 
 function calcularMediana(lista)
 {
-    lista.sort(); 
+    lista.sort((a,b) => a-b); 
 
     const mitadLista = parseInt(lista.length / 2);
 
