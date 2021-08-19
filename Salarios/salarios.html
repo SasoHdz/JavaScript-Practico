@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salarios</title>
+    <title>Calculo Financieros</title>
+    <link rel="stylesheet" href="./salarios.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Calculos Financieros</h1>
+        <p>Por cuanto nos podemos endeudar 🤔</p>
+    </header>
+    <section>
+        <h2>Analiza tus dados ....</h2>
+        <form action="">
+            <label for="name">Nos encantaria saber tu nombre:</label>
+            <input id="name" type="text" required>
+            <label for="pais">¿En que país vives?</label>
+            <input id="pais" list="country" required>
+            <datalist id="country">
+                <option value="México"></option>
+                <option value="Colombia"></option>
+                <option value="Otro"></option>
+            </datalist>
+            <label for="ingresoMensual">¿Cuál es tu ingreso mensual?</label>
+            <input id="ingresoMensual"type="number" required>
+            <label for="gastosFijos">¿Cuales son tus gastos fijos?</label>
+            <input id="gastosFijos" type="number" required>
+            <button type="button" onclick="capacidadEndeudamiento()">Calcular..</button>
+            <p id="resultEndeudamiento"></p>
+        </form>
+    </section>
+    <footer>
+        <h3>Sigueme en:</h3>
+        <ul>
+            <li><span class="twitter icon"></span><a href="https://twitter.com/SasoHdz" target="_blank">@SasoHdz</a></li>
+            <li><span class="instagram icon"></span><a href="https://www.instagram.com/saso_hdz/" target="_blank">saso_hdz</a></li>
+            <li><span class="git icon"></span><a href="https://github.com/SasoHdz" target="_blank">SasoHdz</a></li>
+        </ul>
+    </footer>
 </body>
 <script src="salarios.js"></script>
 <script src="analisis.js"></script>

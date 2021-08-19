@@ -1,4 +1,6 @@
-const colombia = [];
+let colombia = [];
+let mexico = [];
+
 colombia.push({
   name: "Camila",
   salary: 500,

@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    background-color:rgb(45, 105, 233);
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.bancobase.com%2Fcontent%2Fimages%2F2021%2F04%2FQue-es-el-mercado-de-dinero_BancoBASE.jpg&f=1&nofb=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    color: rgb(45, 105, 233);
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+form {
+    width: 500px;
+    min-width: 350px;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmananarm.blob.core.windows.net.optimalcdn.com%2Fimages%2F2016%2F07%2F09%2Fcrop_meta.jpg&f=1&nofb=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3) ,
+    0 15px 12px rgb(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 30px;
+    margin-top: 20px;
+}
+
+.img_form {
+    width: 220px;
+}
+
+label {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    font-weight: 600;
+    color: rgb(45, 105, 233);
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    opacity: 0.4;
+    margin-top: 15px;
+    background-color: rgba(75, 79, 92, 0.589);
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: white;
+    background-color: rgb(45, 105, 233);
+}
+
+p {
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 20px;
+    color:rgb(45, 105, 233);
+}
+
+#resultEndeudamiento {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    margin: 20px 0px 0px;
+    text-align: center;
+    background: rgb(45, 105, 233);
+    display: flex;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 800;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    margin-left: 30px;
+}
+li a {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5px;
+}
+
+.twitter{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fiynque%2Fios7-style%2F1024%2FTwitter-icon.png&f=1&nofb=1');
+}
+
+.instagram {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fchaminade.edu%2Fwp-content%2Fuploads%2F2019%2F08%2FInstagram-Icon-color.png&f=1&nofb=1');
+}
+.git{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Fgithub%2Fgithub_PNG40.png&f=1&nofb=1');
+}
+
