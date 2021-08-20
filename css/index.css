@@ -21,6 +21,7 @@ header {
     background: var(--negro);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header_imgs {
@@ -124,9 +125,14 @@ ul li {
     height: 65px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     border-top: 2px solid var(--negro);
     background: var(--amarijoJS);
+}
+
+.containerTaller:hover {
+    transform: scale(1.1);
 }
 
 .containerTaller img {
@@ -148,5 +154,15 @@ ul li {
     font-size: 1rem;
     font-weight: 400;
 }
+
+.noSelecto {
+    background: var(--negro);
+    color: white;
+}
+
+.invertir {
+    filter: invert(1);
+}
+
 
 

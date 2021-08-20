@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Practico JS</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)">
 </head>
 <body>
     <header>
@@ -51,8 +52,8 @@
             </div>
         </section>
         <section class="talleres">
-            <div class="containerTaller">
-                <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/circle.png" alt="Figura">
+            <div id = "container1" onmouseenter="colorNoSelect('container1','img1')" onmouseleave="desSelect()" class="containerTaller" >
+                <img id="img1" src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/circle.png" alt="Figura">
                 <div class="containerTaller_Description">
                     <h3>TALLER #1</h3>
                     <p class="title_description">
@@ -63,8 +64,8 @@
                     </p>
                 </div>
             </div>
-            <div class="containerTaller">
-                <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/price.png" alt="precio">
+            <div id = "container2" onmouseenter="colorNoSelect('container2','img2')" onmouseleave="desSelect()" class="containerTaller">
+                <img id="img2" src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/price.png" alt="precio">
                 <div class="containerTaller_Description">
                     <h3>TALLER #2</h3>
                     <p class="title_description">
@@ -76,8 +77,8 @@
                     </p>
                 </div>
             </div>
-            <div class="containerTaller">
-                <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/discount.png" alt="Porcentaje">
+            <div id = "container3" onmouseenter="colorNoSelect('container3','img3')" onmouseleave="desSelect()" class="containerTaller">
+                <img id="img3" src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/discount.png" alt="Porcentaje">
                 <div class="containerTaller_Description">
                     <h3>TALLER #3</h3>
                     <p class="title_description">
@@ -88,8 +89,8 @@
                     </p>
                 </div>
             </div>
-            <div class="containerTaller">
-                <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/dollar.png" alt="Dinero">
+            <div id = "container4" onmouseenter="colorNoSelect('container4','img4')" onmouseleave="desSelect()" class="containerTaller">
+                <img id="img4" src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/dollar.png" alt="Dinero">
                 <div class="containerTaller_Description">
                     <h3>TALLER #4</h3>
                     <p class="title_description">
@@ -104,4 +105,5 @@
         </section>
     </main>
 </body>
+<script src="./index.js"></script>
 </html>
