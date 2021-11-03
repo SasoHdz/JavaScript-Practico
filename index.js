@@ -16,28 +16,31 @@
 
 function colorNoSelect (cardSelecta, imgSelecta) {
 
-
-    cards.forEach(
-        function (card) {
-            if(card.id != cardSelecta) {
-                card.classList.add('noSelecto');
-            }
-            else 
-            {
-                card.classList.add
-            }
-        });
-
-        imgs.forEach(
-            function (img) {
-                if(img.id != imgSelecta) {
-                    img.classList.add('invertir');
+    setTimeout(function () {
+        cards.forEach(
+            function (card) {
+                if(card.id != cardSelecta) {
+                    card.classList.add('noSelecto');
                 }
                 else 
                 {
-                    img.classList.add
+                    card.classList.add
                 }
             });
+    
+            imgs.forEach(
+                function (img) {
+                    if(img.id != imgSelecta) {
+                        img.classList.add('invertir');
+                    }
+                    else 
+                    {
+                        img.classList.add
+                    }
+                });
+    }, 10);
+
+    
         
 }
 
