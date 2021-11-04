@@ -15,8 +15,6 @@
 
 
 function colorNoSelect (cardSelecta, imgSelecta) {
-
-    setTimeout(function () {
         cards.forEach(
             function (card) {
                 if(card.id != cardSelecta) {
@@ -37,11 +35,7 @@ function colorNoSelect (cardSelecta, imgSelecta) {
                     {
                         img.classList.add
                     }
-                });
-    }, 10);
-
-    
-        
+                });        
 }
 
 
