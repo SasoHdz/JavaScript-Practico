@@ -19,6 +19,10 @@ p, li {
     font-size: 1.9rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 header {
     width: 100%;
