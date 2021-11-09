@@ -162,6 +162,7 @@ ul li {
 .description {
     font-size: 1rem;
     font-weight: 400;
+    margin-right: 15px;
 }
 
 .noSelecto {

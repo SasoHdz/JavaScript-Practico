@@ -19,6 +19,10 @@ header {
     padding-bottom: 15px;
 }
 
+header p {
+    color: white;
+}
+
 section{
     width: 100%;
     height: 100%;

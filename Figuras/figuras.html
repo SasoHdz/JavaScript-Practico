@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+    <link rel="shortcut icon" href="../favicon.png">
     <link rel="stylesheet" href="./css/figuras.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 500px)">
     <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 1040px)">
@@ -22,7 +23,7 @@
             </div>
             <form action="">
                 <label for="InputCuadrado">Escribe cuánto mide el lado de tu cuadrado:</label>
-                <input id="InputCuadrado" type="number">
+                <input id="InputCuadrado" type="number" required>
                 <div class="button-container">
                     <button type="button" onclick="calcularPerimetroCuadrado()">Perímetro</button>
                     <button type="button" onclick="calcularAreaCuadrado()">Área</button>
@@ -39,19 +40,19 @@
                 <label for="">Escribe el las medidas de tu triangulo:</label>
                 <div class="containerInput">
                     <label for="lado1Triangulo">Lado 1</label>
-                    <input id="lado1Triangulo" type="number">
+                    <input id="lado1Triangulo" type="number" required>
                 </div>
                 <div class="containerInput">
                     <label for="lado2Triangulo">Lado 2</label>
-                    <input id="lado2Triangulo" type="number">
+                    <input id="lado2Triangulo" type="number" required>
                 </div>
                 <div class="containerInput">
                     <label for="baseTriangulo">Base</label>
-                    <input id="baseTriangulo" type="number">
+                    <input id="baseTriangulo" type="number" required>
                 </div>
                 <div class="containerInput">
                     <label for="alturaTriangulo">Altura</label>
-                    <input id="alturaTriangulo" type="number">
+                    <input id="alturaTriangulo" type="number" required>
                 </div>
                 <div class="button-container">
                     <button type="button" onclick="calcularPerimetroTriangulo()">Perímetro</button>

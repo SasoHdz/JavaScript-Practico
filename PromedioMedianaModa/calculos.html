@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promedio, Moda y Mediana</title>
+    <link rel="shortcut icon" href="../favicon.png">
     <link rel="stylesheet" href="./caculos.css">
 </head>
 <body>
@@ -16,13 +17,24 @@
         <h2>Calculando ....</h2>
         <form action="">
             <label for="inputDatos">Ingresa el grupo de datos<br> (separa los datos por comas) :</label>
-            <input id="inputDatos" type="text">
+            <span class="icono"></span>
+            <input id="inputDatos" type="text" required>
             <button type="button" onclick="calcularDatos()">Calcular</button>
-            <p class="promedio"></p>
-            <p class="mediana"></p>
-            <p class="moda"></p>
+            <div>
+                <p id="pro" class="promedio"></p>
+                <p id="medi"cclass="mediana"></p>
+                <p id="mod" class="moda"></p>
+            </div>
         </form>
     </section>
 </body>
+<footer>
+    <h3>Sigueme en:</h3>
+    <ul>
+        <li><span class="twitter icon"></span><a href="https://twitter.com/SasoHdz" target="_blank">@SasoHdz</a></li>
+        <li><span class="instagram icon"></span><a href="https://www.instagram.com/saso_hdz/" target="_blank">saso_hdz</a></li>
+        <li><span class="git icon"></span><a href="https://github.com/SasoHdz" target="_blank">SasoHdz</a></li>
+    </ul>
+</footer>
 <script src="calculos.js"></script>
 </html>

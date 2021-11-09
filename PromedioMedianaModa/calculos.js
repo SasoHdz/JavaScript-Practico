@@ -71,6 +71,29 @@ function calcularModa (lista) {
 //
 
 function calcularDatos() {
-    const datos = document.getElementById('inputDatos').value;
-    console.log(datos);
+
+    const regexDatos = /^((-?[0-9])+,?)+((-?[0-9])+)$/;
+    const cadena = document.getElementById('inputDatos').value;
+    
+    if(regexDatos.test(cadena)){
+        let datos = cadena.split(',');
+        const promedio = document.getElementById('pro');
+        const mediana = document.getElementById('medi');
+        const moda = document.getElementById('mod');
+    
+        for(let i=0;i<datos.length;i++) {
+            datos[i] = parseInt(datos[i]);
+        }
+    
+        promedio.innerHTML ="El promedio es: "+ calcularPromedio(datos);
+        mediana.innerHTML = "La mediana es: "+calcularMediana(datos);
+        moda.innerHTML = "La moda es: "+calcularModa(datos);
+    }
+    else {
+        alert("Datos invalidos 😣");
+    }
+    
+   
+    //console.log(datos);
+
 }
